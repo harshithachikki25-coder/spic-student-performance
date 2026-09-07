@@ -1,0 +1,213 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIC - Assignments</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+        }
+
+        .sidebar {
+            position: fixed;
+            width: 240px;
+            height: 100vh;
+            background: #172554;
+            padding: 25px 15px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #bfdbfe;
+            text-align: center;
+            font-size: 12px;
+            margin: 5px 0 30px;
+        }
+
+        .nav a {
+            display: block;
+            color: #dbeafe;
+            text-decoration: none;
+            padding: 14px 15px;
+            margin: 6px 0;
+            border-radius: 10px;
+        }
+
+        .nav a:hover,
+        .nav .active {
+            background: #2563eb;
+            color: white;
+        }
+
+        .logout {
+            background: #dc2626 !important;
+            margin-top: 25px !important;
+        }
+
+        .main {
+            margin-left: 240px;
+            padding: 30px;
+        }
+
+        .topbar,
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 12px rgba(0,0,0,.08);
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1, h2 {
+            color: #172554;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .stat {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,.08);
+        }
+
+        .stat h3 {
+            color: #64748b;
+        }
+
+        .number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: left;
+        }
+
+        th {
+            background: #eff6ff;
+            color: #172554;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">SPIC</div>
+    <div class="subtitle">Student Performance Intelligence</div>
+
+    <div class="nav">
+
+        <a href="/dashboard">🏠 Dashboard</a>
+        <a href="/attendance">📊 Attendance</a>
+        <a href="/performance">📈 Performance</a>
+        <a href="/assignments" class="active">📝 Assignments</a>
+        <a href="/analytics">📊 Analytics</a>
+        <a href="/profile">👤 Profile</a>
+        <a href="/logout" class="logout">🚪 Logout</a>
+
+    </div>
+
+</div>
+
+<div class="main">
+
+    <div class="topbar">
+        <h1>Assignments</h1>
+    </div>
+
+    <div class="stats">
+
+        <div class="stat">
+            <h3>Total Assignments</h3>
+            <div class="number">12</div>
+        </div>
+
+        <div class="stat">
+            <h3>Completed</h3>
+            <div class="number">8</div>
+        </div>
+
+        <div class="stat">
+            <h3>Pending</h3>
+            <div class="number">3</div>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Assignment Details</h2>
+
+        <table>
+
+            <tr>
+                <th>Assignment</th>
+                <th>Subject</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Python Programming</td>
+                <td>Python</td>
+                <td>Completed</td>
+            </tr>
+
+            <tr>
+                <td>Database Design</td>
+                <td>DBMS</td>
+                <td>Completed</td>
+            </tr>
+
+            <tr>
+                <td>Network Protocols</td>
+                <td>Computer Networks</td>
+                <td>Pending</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+```
